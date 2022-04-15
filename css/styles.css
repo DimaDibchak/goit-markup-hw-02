@@ -24,6 +24,9 @@ ul {
 .navigation-link {
     color: var(--main-color);
 }
+.logo-link:hover {
+    text-decoration: underline var(--accent-color);
+}
 .logo-first-word {
     color: var(--accent-color);
 }
@@ -40,9 +43,11 @@ ul {
 }
 
 /* Hero */
+.hero {
+    background-color: var(--background-top);
+}
 .hero-title {
     color: var(--white-color);
-    background-color: var(--background-top);
 }
 .hero-button {
     color: var(--white-color);
