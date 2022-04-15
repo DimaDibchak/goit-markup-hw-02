@@ -1,0 +1,100 @@
+:root {
+    --main-color: #212121;
+    --additional-color:#757575;
+    --accent-color : #2196F3;
+    --white-color: #FFFFFF;
+    --background-top: #2F303A;
+    --background-bottom: #F5F4FA;
+    --background-footer: #2F303A;
+}
+
+body {
+    color: var(--additional-color);
+    background-color: var(--white-color);
+}
+a {
+    text-decoration: none;
+}
+ul {
+    list-style-type: none;
+}
+
+/* header */
+.logo-link,
+.navigation-link {
+    color: var(--main-color);
+}
+.logo-first-word {
+    color: var(--accent-color);
+}
+.navigation-link:focus,
+.navigation-link:hover{
+    color: var(--accent-color);
+}
+.header .link {
+    color: var(--additional-color);
+}
+.header .link:focus,
+.header .link:hover {
+    color: var(--accent-color);
+}
+
+/* Hero */
+.hero-title {
+    color: var(--white-color);
+    background-color: var(--background-top);
+}
+.hero-button {
+    color: var(--white-color);
+    background-color: var(--accent-color);
+}
+
+/* Advantages*/
+.advantages-title {
+    opacity: 0;
+}
+.advantage {
+    color: var(--main-color);
+}
+
+/* Чем мы занимаемся */
+.deal-tittle {
+    color: var(--main-color);
+}
+
+/* Наша команда  */
+.team {
+    background-color: var(--background-bottom);
+}
+.team-tittle,
+.team-member {
+    color: var(--main-color);
+}
+
+.team-member:hover,
+.team-position:hover {
+    text-decoration: underline var(--accent-color);
+}
+
+/* Footer */
+.footer {
+    background-color: var(--background-footer);
+}
+.logo-second-word {
+    color: var(--white-color);
+}
+
+.adress-location {
+    color: var(--white-color);
+}
+
+.adress-mail,
+.adress-tel {
+    color: var(--additional-color)
+}
+
+.adress-location:hover,
+.adress-mail:hover,
+.adress-tel:hover {
+    text-decoration: underline var(--accent-color);
+}
