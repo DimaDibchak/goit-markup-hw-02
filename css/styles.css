@@ -3,55 +3,92 @@
     --additional-color:#757575;
     --accent-color : #2196F3;
     --white-color: #FFFFFF;
-    --background-top: #2F303A;
-    --background-bottom: #F5F4FA;
-    --background-footer: #2F303A;
+    --background-color: #2F303A;
+    --background-additionalcolor: #F5F4FA;
+    --address-color:rgba(255, 255, 255, 0.6);
 }
 
 body {
     color: var(--additional-color);
     background-color: var(--white-color);
+    font-family: Roboto, sans-serif;
+    letter-spacing: 0.03em;
+    font-size: 14px;
+    line-height: 1.71;
 }
 a {
     text-decoration: none;
 }
 ul {
-    list-style-type: none;
+    list-style: none;
+}
+.section-title {
+    color: var(--main-color);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
 }
 
 /* header */
-.logo-link,
-.navigation-link {
+.logo {
+    font-family: Raleway;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+}
+.logo,
+.nav-link {
     color: var(--main-color);
 }
-.logo-link:hover {
-    text-decoration: underline var(--accent-color);
+.auth-link {
+    color: var(--additional-color);
 }
+
 .logo-first-word {
     color: var(--accent-color);
 }
-.navigation-link:focus,
-.navigation-link:hover{
+.nav-link:focus,
+.nav-link:hover,
+.auth-link:focus,
+.auth-link:hover {
     color: var(--accent-color);
 }
-.header .link {
-    color: var(--additional-color);
-}
-.header .link:focus,
-.header .link:hover {
+.nav-link.current {
     color: var(--accent-color);
 }
+.auth-link,
+.nav-link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
+
 
 /* Hero */
 .hero {
-    background-color: var(--background-top);
+    background-color: var(--background-color);
 }
 .hero-title {
     color: var(--white-color);
+    letter-spacing: 0.06em;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    text-transform: uppercase;
 }
 .hero-button {
     color: var(--white-color);
     background-color: var(--accent-color);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
 }
 
 /* Advantages*/
@@ -60,30 +97,43 @@ ul {
 }
 .advantage {
     color: var(--main-color);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
 }
 
+
 /* Чем мы занимаемся */
-.deal-tittle {
-    color: var(--main-color);
+.deal-list {
+    display: inline-block;
 }
 
 /* Наша команда  */
 .team {
-    background-color: var(--background-bottom);
+    background-color: var(--background-additionalcolor);
 }
-.team-tittle,
-.team-member {
+.team-name {
     color: var(--main-color);
-}
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
 
-.team-member:hover,
-.team-position:hover {
-    text-decoration: underline var(--accent-color);
+}
+.team-member {
+    background-color: var(--white-color);
+    display: inline-block;
+}
+.team-position {
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
 }
 
 /* Footer */
 .footer {
-    background-color: var(--background-footer);
+    background-color: var(--background-color);
 }
 .logo-second-word {
     color: var(--white-color);
@@ -91,15 +141,52 @@ ul {
 
 .adress-location {
     color: var(--white-color);
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
 }
 
 .adress-mail,
 .adress-tel {
-    color: var(--additional-color)
+    color: var(--address-color);
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+}
+.address a:hover,
+.address a:focus {
+    color: var(--accent-color);
 }
 
-.adress-location:hover,
-.adress-mail:hover,
-.adress-tel:hover {
-    text-decoration: underline var(--accent-color);
+
+/* Portfolio */
+
+/* buttons */
+.filter {
+    color: var(--main-color);
+    background-color: var(--background-additionalcolor);
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+}
+.filter:hover,
+.filter:focus {
+    color: var(--white-color);
+    background-color: var(--accent-color);
+}
+
+.examples-title {
+    opacity: 0;
+}
+.example-name {
+    color: var(--main-color);
+    letter-spacing: 0.06em;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+}
+.example-class {
+    font-size: 16px;
+    line-height: 1.88;
 }
